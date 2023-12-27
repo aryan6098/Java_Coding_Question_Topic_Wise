@@ -12,9 +12,10 @@ This repository is a comprehensive collection of Java programming language and D
 - **Algorithms:** Common algorithmic problems and solutions.
 
 ## Structure
-    Module - 2 - [Intermediate Refresher](./Module-2/)
-        - [Day 4 - Refresher : Introduction to Java : Input/Output + Data Types + Operators](./Module-2/Day4_IntroductionToJava_Input/)
-        - [Day 5 - Refresher: Introduction to Java : If-Else](./Module-2/Day5_Introduction%20to%20Java%20:%20If_Else/)
-        - [Day 13 - Refresher : Strings](./Module-2/%20Day13_Strings/)
-        - [Day 14 - Refresher : HashMap & HashSet](./Module-2/Day14_HashMapAndHashSet/)
+- [Module - 2 - Intermediate Refresher](./Module-2/)
+    - [Day 4 - Refresher : Introduction to Java : Input/Output + Data Types + Operators](./Module-2/Day6_Introduction%20to%20Java%20:%20Input/)
+    - [Day 5 - Refresher: Introduction to Java : If-Else](./Module-2/Day5_Introduction%20to%20Java%20:%20If-Else/)
+    - [Day 13 - Refresher : Strings](./Module-2/%20Day13_Strings/)
+    - [Day 14 - Refresher : HashMap & HashSet](./Module-2/Day14_HashMapAndHashSet/)
+
 
