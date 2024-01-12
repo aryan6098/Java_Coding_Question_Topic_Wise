@@ -23,7 +23,8 @@ This repository is a comprehensive collection of Java programming language and D
     - [Day 16 - Intermediate DSA: Time Complexity](./Module-3/Day16_Intermediate%20DSA:%20Introduction%20to%20Problem%20Solving/)
     - [Day 17 - Intermediate DSA: Introduction to Problem Solving](./Module-3/Day17_Intermediate%20DSA:%20Time%20Complexity/)
     - [Day 18 - Intermediate DSA: Introduction to Arrays](./Module-3/Day18_Intermediate%20DSA:%20Introduction_to_Arrays/)
-    - [Day 20 - Intermediate DSA: Arrays - Prefix Sum](./Module-3/Day20_Intermediate%20DSA:%20Arrays%20-%20Carry%20Forward%20&%20Subarrays/)
-    - [Day 22 - Intermediate DSA: Arrays - Carry Forward & Subarrays](./Module-3/Day22_Arrays%20:%20Sliding%20Window%20&%20Contribution%20Technique/)
+    - [Day 19 - Intermediate DSA: Arrays - Prefix Sum](./Module-3/Day19_Intermediate%20DSA:%20Arrays%20-%20Prefix%20Sum/)
+    - [Day 20 - Intermediate DSA: Arrays - Carry Forward & Subarrays](./Module-3/Day20_Intermediate%20DSA:%20Arrays%20-%20Carry%20Forward%20&%20Subarrays/)
+    - [Day 21 - Intermediate DSA: Arrays : Sliding Window & Contribution Technique](./Module-3/Day21_Arrays%20:%20Sliding%20Window%20&%20Contribution%20Technique/)
 
 
