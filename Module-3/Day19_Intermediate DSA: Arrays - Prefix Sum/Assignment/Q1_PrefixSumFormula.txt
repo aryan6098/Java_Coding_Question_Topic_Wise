@@ -1,0 +1,14 @@
+Q1. Prefix Sum Formula
+
+
+The prefix sum formula for an array A of N integers is given by :-
+
+>  Options
+
+A> prefSum[i] = prefSum[i] + A[i]
+B> prefSum[i] = prefSum[i - 1] + A[i]
+C> prefSum[i - 1] = prefSum[i] + A[i]
+D> prefSum[i - 1] = prefSum[i - 1] + A[i]
+
+
+Answer -> prefSum[i] = prefSum[i - 1] + A[i]
