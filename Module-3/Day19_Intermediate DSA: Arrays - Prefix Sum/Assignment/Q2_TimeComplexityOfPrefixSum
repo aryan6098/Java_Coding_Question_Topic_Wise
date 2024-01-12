@@ -1,0 +1,16 @@
+Q2. Time Complexity of Prefix Sum
+
+
+What is the time complexity of creating the prefix sum array of an array A of N integers ?
+
+Options -> 
+A> O(1)
+B> O(N)
+C> O(N^2)
+D> O(N^3)
+
+
+Answer -> O(N)
+
+
+
