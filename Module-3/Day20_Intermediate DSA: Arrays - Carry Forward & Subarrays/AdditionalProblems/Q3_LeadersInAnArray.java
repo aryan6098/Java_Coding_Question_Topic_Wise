@@ -45,23 +45,30 @@ Explanation 2:
  So we will return these two elements i.e [5, 4], we can also any other ordering.
  */
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Q3_LeadersInAnArray {
-    public static void solve(int[] A) {
-        for(int  i= 0 ;i<A.length;i++){
-            int max = A[i];
-            for(int j = i + 1; j<A.length;j++){
-                if(max < A[j]){
-                    max = -1;
-                }
-            }
-            if(max!=-1){
-                System.out.println(A[i]);
+
+    public static ArrayList<Integer> solve(ArrayList<Integer> A) {
+        ArrayList<Integer> result = new ArrayList<>();
+        int count = 1;
+        int max = A.get(A.size() - 1);
+        result.add(max);
+        for (int i = A.size() - 1; i >= 0; i--) {
+            if (A.get(i) > max) {
+                max = A.get(i);
+                result.add(max);
             }
         }
+        return result;
     }
+
     public static void main(String[] args) {
-        int[] arr = {5,4};
-        solve(arr);
-        
+        // int[] arr = {16, 17, 4, 3, 5, 2};
+        ArrayList<Integer> arr = new ArrayList<>(Arrays.asList(16, 17, 4, 3, 5, 2));
+        ArrayList<Integer> res = solve(arr);
+        System.out.println(res);
+
     }
 }
