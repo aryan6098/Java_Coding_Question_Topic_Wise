@@ -27,4 +27,11 @@ This repository is a comprehensive collection of Java programming language and D
     - [Day 20 - Intermediate DSA: Arrays - Carry Forward & Subarrays](./Module-3/Day20_Intermediate%20DSA:%20Arrays%20-%20Carry%20Forward%20&%20Subarrays/)
     - [Day 21 - Intermediate DSA: Arrays : Sliding Window & Contribution Technique](./Module-3/Day21_Arrays%20:%20Sliding%20Window%20&%20Contribution%20Technique/)
 
+- [Module - 4 - Introduction to Problem Solving (Intermediate) 2](./Module-4/)
+    - [Day 22 - Day 22 - Intermediate DSA: Arrays : 2D Matrices](./Module-4/Day%2022%20-%20Intermediate%20DSA:%20Arrays%20:%202D%20Matrices/)
+    - [Day 23 - Day 23 - Intermediate DSA: Memory Management](./Module-4/Day%2023%20-%20Intermediate%20DSA:%20Memory%20Management/)
+    - [Day 24 - Intermediate DSA: Sorting Basics](./Module-4/Day%2024%20-%20Intermediate%20DSA:%20Sorting%20Basics/)
+    - [Day 25 - Day 24 - Intermediate DSA: Sorting Basics](\/)
+    - [Day 20 - Intermediate DSA: Arrays - Carry Forward & Subarrays](./Module-3/Day20_Intermediate%20DSA:%20Arrays%20-%20Carry%20Forward%20&%20Subarrays/)
+    - [Day 21 - Intermediate DSA: Arrays : Sliding Window & Contribution Technique](./Module-3/Day21_Arrays%20:%20Sliding%20Window%20&%20Contribution%20Technique/)
 
