@@ -53,13 +53,83 @@ Hence, the answer is 0.
 
 public class Q1_MaximumSubarrayEasy {
 
-    public static int maxSubarray(int A, int B, ArrayList<Integer> C) {
+    public static int maxSubarrayMethod3(int A, int B, int C[]) {
+        int maxSum =0 ;
+        for(int i = 0; i < A; i++) {
+            int sum = 0;
+            for(int j = i; j < A; j++) {
+                sum = sum + C[j];
+                if(sum > maxSum && sum <= B) {
+                    maxSum = sum;
+                }
+            }
+        }
 
-        for(int i = 0; i < )
+        return maxSum;
+    }
 
-    }  
+    public static int maxSubarrayMethod2(int A, int B, int C[]) {
+        int[] prefixSum = new int[A];
+        prefixSum[0] = C[0];
+        int maxSum =0 ;
+        for(int i = 1; i < A; i++){
+            prefixSum[i] = prefixSum[i - 1] + C[i];
+        }
+        for(int i = 0; i < A; i++) {
+            int sum = 0;
+            for(int j = i; j < A; j++) {
+                if(i == 0) {
+                    sum = prefixSum[j];
+                }
+                else { 
+                    sum = prefixSum[j]  - prefixSum[i - 1];
+                }
+                if(sum > maxSum && sum <= B) {
+                    maxSum = sum;
+                }
+            }
+        }
+        return maxSum;
+    }
+
+    public static int maxSubarrayMethod1(int A, int B, int C[]) {
+        int maxSum = 0;
+        for(int i = 0; i < A; i++){
+            
+            for(int j = i; j < A; j++) {
+                int sum = 0;
+                for(int k = i; k <= j; k++){ 
+                    sum = sum + C[k];
+                }
+                if(sum > maxSum && sum <= B) {
+                    maxSum = sum;
+                }
+            }
+           
+        }
+        return maxSum;
+    }
+
+    
+    
+    
+
     public static void main(String[] args) {
-        
+        int C[] = {2, 1, 3, 4, 5};
+        int A = 5;
+        int B = 12;
+        // maxSubarray(A, B, C);
+        System.out.println(maxSubarrayMethod1(A, B, C));
+        System.out.println(maxSubarrayMethod2(A, B, C));
+
+        System.out.println(maxSubarrayMethod3(A, B, C));
+
+
+        int C1[] = {2, 2, 2};
+        int A1 = 3;
+        int B1 = 1;
+        // maxSubarray(A, B, C);
+        // System.out.println(maxSubarrayMethod2(A1, B1, C1));
     } 
     
 }

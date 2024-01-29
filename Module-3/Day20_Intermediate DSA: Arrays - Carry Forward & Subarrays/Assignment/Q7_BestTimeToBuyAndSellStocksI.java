@@ -51,7 +51,28 @@ import javax.crypto.Mac;
 
 public class Q7_BestTimeToBuyAndSellStocksI {
 
+    public static int maxProfitMethod1(final int[] A) {
+        if(A.length==0){
+            return 0;
+        }
+        int min = A[0];
+        int maxProfit = 0;
+        for(int i = 1; i < A.length; i++){
+            int profit = A[i] - min;
+            if(profit > maxProfit) {
+                maxProfit = profit;
+            }
+            if(min > A[i]) {
+                min = A[i];
+            }
+        }
+        return maxProfit;
+    }
+
     public static int maxProfit(final List<Integer> A) {
+        if(A.size()==0){
+            return 0;
+        }
         int maxProfit = 0;
         for(int i = 0; i < A.size(); i++) {
             int max = A.get(i);
@@ -87,9 +108,11 @@ public class Q7_BestTimeToBuyAndSellStocksI {
         return profitPrice;
     }
     public static void main(String[] args) {
-        List<Integer> list = new ArrayList<>(Arrays.asList());
+        int arr[] = {};
+        List<Integer> list = new ArrayList<>(Arrays.asList(1, 4, 5, 2, 4));
         // System.out.println(maxProfit(list));
         System.out.println(solve(list));
+        System.out.println(maxProfitMethod1(arr));
     }
 }
 
