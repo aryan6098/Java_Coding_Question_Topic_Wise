@@ -64,6 +64,16 @@ public class PrintSpiralMatrix {
         }
     }
 
+    public static void addAllSubMatrices(int[][] A) {
+        int sum = 0;
+        for(int i = 0; i < A.length; i++ ) {
+            for(int j = 0; j < A[0].length; j++) {
+                int contr = ((i + 1) * (j + 1)) * ((A.length - i) * (A[0].length - j));
+                sum += contr * A[i][j]; 
+            }
+        }
+        System.out.println(sum);
+    }
     public static void main(String[] args) {
         int[][] A = {
                 {1, 2, 3, 4, 5},
@@ -81,6 +91,13 @@ public class PrintSpiralMatrix {
             {17, 30, 29, 28, 27, 10},
             {16, 15, 14, 13, 12, 11}
         };
-        printSpiralMatrix(arr);
+
+        int[][] array = {
+            {1, 2},
+            {3, 4}
+        };
+        // printSpiralMatrix(arr);
+
+        addAllSubMatrices(array);
     }
 }

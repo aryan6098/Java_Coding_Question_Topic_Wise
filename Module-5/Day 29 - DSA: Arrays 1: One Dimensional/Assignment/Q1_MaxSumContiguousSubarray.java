@@ -40,7 +40,72 @@ Explanation 2:
  The subarray [4,-1,2,1] has the maximum possible sum of 6. 
  */
 public class Q1_MaxSumContiguousSubarray {
-    public static int maxSubArray(final int[] A) { 
+
+
+    // Bruit Force Approach
+    public static int maxSubArray(final int[] A) {
+
+        int ans = Integer.MIN_VALUE;
+        for (int i = 0; i < A.length; i++) {
+            
+            for(int j = i; j < A.length; j ++) 
+            {
+                int sum = 0;
+                for(int k = i ; k  <= j; k++) {
+                    sum = sum + A[k];
+                }
+                if(sum > ans) { 
+                    ans = sum;
+                }
+            }
+        }
+        return ans;
+    }
+
+    //prefix Array Concept
+    public static int maxSubArrayMethod1(final int[] A) {
+        int ans = Integer.MIN_VALUE;
+        int[] prefixSum = new int[A.length];
+        prefixSum[0] = A[0];
+        for(int i = 1; i < A.length; i++) {
+            prefixSum[i] = prefixSum[i - 1] + A[i];
+        }
+
+        for(int i = 0; i < A.length; i++) {
+            int sum = 0;
+            for(int j = i; j < A.length; j++) {
+                if(i == 0) {
+                    sum = prefixSum[j];
+                }
+                else {
+                    sum = prefixSum[j] - prefixSum[ i - 1];
+                }
+
+                if(sum > ans) { 
+                    ans = sum;
+                }
+            }
+           
+        }
+        return ans;
+    }
+
+    //Carry forward Concept
+    public static int maxSubArrayMethod2(final int[] A) { 
+        int ans = Integer.MIN_VALUE;
+        for(int i = 0; i < A.length; i++) {
+            int sum = 0; 
+            for(int j = i; j < A.length; j++) {
+                sum = sum + A[j];
+                if(sum > ans) { 
+                    ans = sum;
+                }
+            }
+        }
+        return ans;
+    }
+
+    public static int maxSubArrayMethod3(final int[] A) { 
         int  ans = Integer.MIN_VALUE;
         int sum = 0;
         for(int i = 0 ;i < A.length; i++) {
@@ -57,5 +122,8 @@ public class Q1_MaxSumContiguousSubarray {
     public static void main(String[] args) {
         int arr[] = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
         System.out.println(maxSubArray(arr));
+        System.out.println(maxSubArrayMethod1(arr));
+        System.out.println(maxSubArrayMethod2(arr));
+        System.out.println(maxSubArrayMethod3(arr));
     }
 }
