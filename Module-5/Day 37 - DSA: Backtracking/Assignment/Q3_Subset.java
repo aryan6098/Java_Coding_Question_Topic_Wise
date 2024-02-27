@@ -68,7 +68,7 @@ import java.util.Arrays;
 public class Q3_Subset {
 
     public static void generateSubsets(ArrayList<Integer> A, int index, ArrayList<Integer> current,
-            ArrayList<ArrayList<Integer>> result) {
+        ArrayList<ArrayList<Integer>> result) {
         result.add(new ArrayList<>(current)); // Add the current subset to the result
         for (int i = index; i < A.size(); i++) {
             if (i > index && A.get(i).equals(A.get(i - 1))) // Skip duplicates

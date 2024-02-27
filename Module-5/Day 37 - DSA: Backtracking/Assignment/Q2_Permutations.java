@@ -18,6 +18,9 @@ public class Q2_Permutations {
         }
 
         for (int i = 0; i < A.size(); i++) {
+            if(i > 0 && A.get(i).equals(A.get(i - 1)) && !visited.get(i  -1)) {
+                continue;
+            }
             if (visited.get(i) == false) {
                 visited.set(i, true);
                 arr.set(idx, A.get(i));
