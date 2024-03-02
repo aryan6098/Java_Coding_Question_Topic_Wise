@@ -1,0 +1,15 @@
+Q4. OOPs in Java (Constructors and Static) 4
+Unsolved
+Consider the following two statements
+i. Static Methods can use non static data members also
+ii. Static Methods can not use this keyword
+Which of the following is true
+
+->>>>>>>>> Options
+
+A> Both i and ii are false
+B> Both i and ii are true
+c> i is true and ii is false
+D> i is false and ii is true
+
+Ans -> D 
