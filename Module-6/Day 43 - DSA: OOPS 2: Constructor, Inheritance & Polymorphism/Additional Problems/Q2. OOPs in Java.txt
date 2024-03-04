@@ -1,0 +1,9 @@
+Q2. OOPs in Java (Inheritance and polymorphism - Method Overloading and Overriding) -1
+Which of the following does Java not support
+
+Options -> 
+
+    Method overriding
+    Method overloading
+    Operator overloading   ---> Ans
+    Method hiding

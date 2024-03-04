@@ -1,0 +1,15 @@
+Q1. OOPs in Java (Inheritance and polymorphism - Method Overloading and Overriding) -4
+
+Consider the following statements
+i. Calling of overloaded methods is decided at compile time
+
+ii. Calling of overridden methods is decided at runtime.
+
+Which of the following is correct?
+
+Options
+    Both are correct  ->  Ans
+    Both are incorrect
+    i is correct, ii is incorrect
+    i is incorrect, ii is correct
+

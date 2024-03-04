@@ -1,0 +1,14 @@
+Q3. OOPs in Java (Inheritance and polymorphism - Method Overloading and Overriding) -3
+What is true about static methods?
+
+i. They can be overloaded
+
+ii. They can be overridden
+
+Which of the following is correct?
+
+Options-> 
+    Both are correct
+    Both are incorrect
+    i is correct, ii is incorrect ---> Ans
+    i is incorrect, ii is correct

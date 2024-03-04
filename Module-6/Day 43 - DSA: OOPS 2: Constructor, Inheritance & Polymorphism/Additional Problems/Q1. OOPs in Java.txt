@@ -1,0 +1,9 @@
+Q1. OOPs in Java (Constructors and Static) 1
+Which module in JVM is responsible for memory cleanup
+
+Options-> 
+
+    Code Access Security
+    Memory Cleaner
+    Garbage Collector      ---> Ans
+    JDK
