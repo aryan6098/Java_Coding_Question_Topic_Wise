@@ -68,19 +68,27 @@ public class Q2_LargestCoprimeDivisor {
         return gcd(B, A % B);
     }
 
+    // public static int cpFact(int A, int B) {
+    //     int ans = 0;
+    //     for(int i = 1; i <= A; i++) {
+    //         if(A % i == 0) {
+    //             int currentGcd = gcd(i, B);
+    //             if(currentGcd == 1) {
+    //                 ans = Math.max(ans, i);
+    //             }
+    //         }
+    //     }
+    //     return ans;
+    // }
+
     public static int cpFact(int A, int B) {
-        int ans = 0;
-        for(int i = 1; i <= A; i++) {
-            if(A % i == 0) {
-                int currentGcd = gcd(i, B);
-                if(currentGcd == 1) {
-                    ans = Math.max(ans, i);
-                }
-            }
+       
+        while (gcd(A, B) != 1) {
+          A = A/gcd(A, B);
         }
-        return ans;
-    }
+        return A;
+      }
     public static void main(String[] args) {
-        System.out.println(cpFact(466363660, 151790012));
+        System.out.println(cpFact(30, 12));
     }
 }
