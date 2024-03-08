@@ -56,10 +56,6 @@ public class Q2_CountSubarrayZeroSum {
         for(int i = 1; i < A.length; i++) {
             pfSum[i] = pfSum[i - 1] + A[i];
         }
-        for(int i = 0 ; i  < pfSum.length; i++) {
-            System.out.print(pfSum[i] +" ");
-        }
-        System.out.println("------------");
         HashMap<Integer, Integer> hashMap = new HashMap<>();
         hashMap.put(0, 1);
         int ans = 0;
@@ -81,7 +77,6 @@ public class Q2_CountSubarrayZeroSum {
 
     public static void main(String[] args) {
         int[] array = {1, -1 ,-2, 2};
-        // {1, -1 ,-2, 2};
         System.out.println(solve(array));
     }
 }
