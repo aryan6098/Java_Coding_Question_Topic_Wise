@@ -1,3 +1,4 @@
+
 /*
  * Problem Description
 Given an array of integers A and an integer B.
@@ -50,7 +51,7 @@ public class Q3_SubarraySumEqualsK {
         int count = 0;
         HashMap<Integer, Integer> map = new HashMap<>();
         map.put(0, 1);
-        
+
         for (int i = 0; i < A.length; i++) {
             sum = sum + A[i];
             int y = sum - B;
@@ -61,9 +62,11 @@ public class Q3_SubarraySumEqualsK {
         }
         return count;
     }
+
     public static void main(String[] args) {
-        int[] A =  {1, 0, 1};
+        int[] A = { 1, 0, 1 };
         int k = 1;
         System.out.println(solve(A, k));
+
     }
 }
