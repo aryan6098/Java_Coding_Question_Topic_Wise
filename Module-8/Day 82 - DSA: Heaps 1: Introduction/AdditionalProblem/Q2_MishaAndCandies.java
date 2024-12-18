@@ -70,18 +70,38 @@ Explanation 2:
  So the number of candies Misha eat is 1.
  */
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.PriorityQueue;
 
 public class Q2_MishaAndCandies {
 
     public static int solve(ArrayList<Integer> A, int B) {
         PriorityQueue<Integer> minHeap = new PriorityQueue<>(A);
+        int ans = 0;
 
-        
+        while (!minHeap.isEmpty()) {
+            int curr = minHeap.poll();
+            if (curr > B) {
+                break;
+            }
+
+            int candiesEaten = curr / 2;
+            ans += candiesEaten;
+            int remainingCandies = curr - candiesEaten;
+            if (!minHeap.isEmpty()) {
+                int next = minHeap.poll();
+                next += remainingCandies;
+                minHeap.add(next);
+            }
+        }
+        return ans;
 
     }
 
     public static void main(String[] args) {
-
+        ArrayList<Integer> arrayList = new ArrayList<>(Arrays.asList(324, 458, 481, 167, 939, 444, 388, 612, 943, 890,
+                953, 403, 653, 136, 168, 163, 186, 471));
+        System.out.println(solve(arrayList, 231));
     }
 }
